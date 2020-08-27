@@ -1,0 +1,29 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}<title>Home</title>{% endblock title %}
+    {% block content %}
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-lg-4">
+                <img src="{% static 'images/background1.jpg' %}" class="rounded-lg shadow p-3 mb-5 bg-white rounded" alt="No Image Found" width="360px" height="300px">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/background2.jpg' %}"  class="rounded-lg shadow p-3 mb-5 bg-white rounded"  alt="No Image Found" width="360px" height="300px">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/background3.jpg' %}"  class="rounded-lg shadow p-3 mb-5 bg-white rounded" alt="No Image Found" width="360px" height="300px">
+            </div>
+          </div>
+            <div class="row mt-1">
+                <div class="col-md-10 offset-md-1">
+                <center><h3 class="text-primary">TaskMaster is a free application allowing you to organise your tasks in a fast & simple way!</h3></center>
+                <center><h4 class="text-dark">TaskMaster helps you stay organized.</h4></center>
+                </div>
+            </div>
+            <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-2">Lets Get Organized!</button></a></center>
+            <br>
+        </div>
+
+
+    {% endblock content%}
